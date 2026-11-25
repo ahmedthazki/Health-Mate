@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Health Mate</string>
+    <string name="app_title">HealthMate</string>
+    <string name="app_subtitle">Personal Health &amp; Wellness Tracker</string>
+    <string name="record_date">2026–11–23</string>
+    <string name="record_steps">Steps: 5000</string>
+    <string name="record_calories">Calories: 250 kcal</string>
+    <string name="record_water">Water: 1500 ml</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="health_records">Health Records</string>
+    <string name="records_subtitle">View and manage your daily activities</string>
+    <string name="search_date_hint">YYYY-MM-DD</string>
+    <string name="search">Search</string>
+    <string name="show_all_records">Show All Records</string>
+    <string name="total_records">Total Records: %1$s</string>
+    <string name="no_health_records">No health records found</string>
+    <string name="record_heart_rate">Heart Rate</string>
+    <string name="record_sleep">Sleep Duration</string>
+    <string name="record_weight">Body Weight</string>
+
+</resources>

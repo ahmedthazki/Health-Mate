@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F8FC"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="18dp">
+
+        <!-- PREMIUM HEADER -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="22dp"
+            android:background="@drawable/bg_card_mint">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HEALTHMATE"
+                android:textColor="#16866B"
+                android:textSize="12sp"
+                android:letterSpacing="0.15"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Add Health Record"
+                android:textColor="#174B3E"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Track your daily health and wellness"
+                android:textColor="#64877C"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <!-- DATE SECTION -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:text="📅 Record Date"
+            android:textColor="#174B3E"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvRecordDate"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_card_blue"
+            android:gravity="center_vertical"
+            android:padding="16dp"
+            android:hint="Select date"
+            android:textColor="#286DA8"
+            android:textSize="15sp" />
+
+        <!-- DAILY ACTIVITY SECTION -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="🏃 Daily Activity"
+            android:textColor="#087F65"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <!-- STEPS -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="👣 Daily Steps"
+            android:textColor="#246B58"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etSteps"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/bg_card_mint"
+            android:hint="Enter number of steps"
+            android:inputType="number"
+            android:padding="15dp"
+            android:textColor="#174B3E"
+            android:textColorHint="#829B91"
+            android:textSize="14sp" />
+
+        <!-- CALORIES -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="🔥 Calories Burned (kcal)"
+            android:textColor="#A85A2C"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etCalories"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/bg_card_orange"
+            android:hint="Enter calories burned"
+            android:inputType="number"
+            android:padding="15dp"
+            android:textColor="#8B4D29"
+            android:textColorHint="#B99A83"
+            android:textSize="14sp" />
+
+        <!-- WATER -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="💧 Water Intake (ml)"
+            android:textColor="#286DA8"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etWater"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/bg_card_blue"
+            android:hint="Enter water intake"
+            android:inputType="number"
+            android:padding="15dp"
+            android:textColor="#286DA8"
+            android:textColorHint="#829DB5"
+            android:textSize="14sp" />
+
+        <!-- HEALTH METRICS SECTION -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:text="❤️ Health Measurements"
+            android:textColor="#174B3E"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <!-- HEART RATE -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="♥ Heart Rate (BPM)"
+            android:textColor="#A83E58"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etHeartRate"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/bg_card_pink"
+            android:hint="Enter heart rate (optional)"
+            android:inputType="number"
+            android:padding="15dp"
+            android:textColor="#A83E58"
+            android:textColorHint="#B58A96"
+            android:textSize="14sp" />
+
+        <!-- SLEEP -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="☾ Sleep Duration (Hours)"
+            android:textColor="#6553A7"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etSleepHours"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/bg_card_purple"
+            android:hint="Example: 7.5 (optional)"
+            android:inputType="numberDecimal"
+            android:padding="15dp"
+            android:textColor="#6553A7"
+            android:textColorHint="#9B91B8"
+            android:textSize="14sp" />
+
+        <!-- WEIGHT -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="⚖ Body Weight (kg)"
+            android:textColor="#327849"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etWeight"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/bg_card_green"
+            android:hint="Example: 65.5 (optional)"
+            android:inputType="numberDecimal"
+            android:padding="15dp"
+            android:textColor="#327849"
+            android:textColorHint="#8DAA91"
+            android:textSize="14sp" />
+
+        <!-- SAVE BUTTON -->
+        <Button
+            android:id="@+id/btnSaveRecord"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#16866B"
+            android:elevation="4dp"
+            android:text="✓  Save Health Record"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- CANCEL BUTTON -->
+        <Button
+            android:id="@+id/btnCancelRecord"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#E4EEE9"
+            android:text="Cancel"
+            android:textAllCaps="false"
+            android:textColor="#315B4B"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</ScrollView>

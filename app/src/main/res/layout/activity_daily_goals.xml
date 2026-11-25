@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F8F6"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Premium Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_card_mint"
+            android:orientation="vertical"
+            android:padding="22dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🎯 Custom Daily Goals"
+                android:textColor="#183B32"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Set personal targets and build healthier daily habits."
+                android:textColor="#52766A"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Steps Goal -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="👟 Daily Steps Goal"
+            android:textColor="#183B32"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etStepsGoal"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/bg_card_mint"
+            android:hint="Example: 10000"
+            android:inputType="number"
+            android:padding="14dp"
+            android:textColor="#183B32"
+            android:textColorHint="#78948A" />
+
+        <!-- Calories Goal -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🔥 Daily Calories Goal (kcal)"
+            android:textColor="#183B32"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etCaloriesGoal"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/bg_card_orange"
+            android:hint="Example: 500"
+            android:inputType="number"
+            android:padding="14dp"
+            android:textColor="#183B32"
+            android:textColorHint="#9C806D" />
+
+        <!-- Water Goal -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="💧 Daily Water Goal (ml)"
+            android:textColor="#183B32"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etWaterGoal"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/bg_card_blue"
+            android:hint="Example: 2000"
+            android:inputType="number"
+            android:padding="14dp"
+            android:textColor="#183B32"
+            android:textColorHint="#718DA8" />
+
+        <!-- Sleep Goal -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🌙 Daily Sleep Goal (Hours)"
+            android:textColor="#183B32"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etSleepGoal"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/bg_card_purple"
+            android:hint="Example: 8"
+            android:inputType="numberDecimal"
+            android:padding="14dp"
+            android:textColor="#183B32"
+            android:textColorHint="#857BA8" />
+
+        <!-- Weight Goal -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="⚖️ Target Body Weight (kg)"
+            android:textColor="#183B32"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etWeightGoal"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="28dp"
+            android:background="@drawable/bg_card_green"
+            android:hint="Optional: Example 65.5"
+            android:inputType="numberDecimal"
+            android:padding="14dp"
+            android:textColor="#183B32"
+            android:textColorHint="#78947A" />
+
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/btnSaveGoals"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:backgroundTint="#279B78"
+            android:text="✓  Save My Goals"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Cancel Button -->
+        <Button
+            android:id="@+id/btnCancelGoals"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#E4EEE9"
+            android:text="Cancel"
+            android:textAllCaps="false"
+            android:textColor="#315B4B"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+</ScrollView>

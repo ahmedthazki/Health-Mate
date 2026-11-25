@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="14dp"
+    android:background="@drawable/bg_card_mint"
+    android:orientation="vertical"
+    android:padding="18dp">
+
+    <!-- RECORD DATE -->
+    <TextView
+        android:id="@+id/tvRecordDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📅 Record Date"
+        android:textColor="#174B3E"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- STEPS -->
+    <TextView
+        android:id="@+id/tvRecordSteps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="👣 Steps"
+        android:textColor="#087F65"
+        android:textSize="14sp" />
+
+    <!-- CALORIES -->
+    <TextView
+        android:id="@+id/tvRecordCalories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="🔥 Calories"
+        android:textColor="#D78348"
+        android:textSize="14sp" />
+
+    <!-- WATER -->
+    <TextView
+        android:id="@+id/tvRecordWater"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="💧 Water"
+        android:textColor="#3188CE"
+        android:textSize="14sp" />
+
+    <!-- HEART RATE -->
+    <TextView
+        android:id="@+id/tvRecordHeartRate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="♥ Heart Rate"
+        android:textColor="#D94C70"
+        android:textSize="14sp" />
+
+    <!-- SLEEP DURATION -->
+    <TextView
+        android:id="@+id/tvRecordSleep"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="☾ Sleep Duration"
+        android:textColor="#7965C5"
+        android:textSize="14sp" />
+
+    <!-- BODY WEIGHT -->
+    <TextView
+        android:id="@+id/tvRecordWeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="⚖ Body Weight"
+        android:textColor="#29945E"
+        android:textSize="14sp" />
+
+    <!-- ACTION BUTTONS -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnEditRecord"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:backgroundTint="#16866B"
+            android:text="✎ Edit"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnDeleteRecord"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginStart="10dp"
+            android:backgroundTint="#D94C70"
+            android:text="✕ Delete"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F8F6"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_card_mint"
+            android:orientation="vertical"
+            android:padding="22dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="✏️ Edit Health Record"
+                android:textColor="#183B32"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text="Keep your health information up to date"
+                android:textColor="#52766A"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Record Date -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:text="📅 Record Date"
+            android:textColor="#183B32"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvEditDate"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_card_blue"
+            android:gravity="center_vertical"
+            android:padding="14dp"
+            android:text="YYYY-MM-DD"
+            android:textColor="#183B32"
+            android:textSize="16sp" />
+
+        <!-- Steps -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:text="👟 Daily Steps"
+            android:textColor="#183B32"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etEditSteps"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_card_mint"
+            android:hint="Enter steps"
+            android:inputType="number"
+            android:padding="14dp"
+            android:textColor="#183B32"
+            android:textColorHint="#78948A" />
+
+        <!-- Calories -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="🔥 Calories Burned (kcal)"
+            android:textColor="#183B32"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etEditCalories"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_card_orange"
+            android:hint="Enter calories"
+            android:inputType="number"
+            android:padding="14dp"
+            android:textColor="#183B32"
+            android:textColorHint="#9C806D" />
+
+        <!-- Water -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="💧 Water Intake (ml)"
+            android:textColor="#183B32"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etEditWater"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_card_blue"
+            android:hint="Enter water intake"
+            android:inputType="number"
+            android:padding="14dp"
+            android:textColor="#183B32"
+            android:textColorHint="#718DA8" />
+
+        <!-- Heart Rate -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="❤️ Heart Rate (BPM)"
+            android:textColor="#183B32"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etEditHeartRate"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_card_pink"
+            android:hint="Enter heart rate (optional)"
+            android:inputType="number"
+            android:padding="14dp"
+            android:textColor="#183B32"
+            android:textColorHint="#A17B84" />
+
+        <!-- Sleep Duration -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="🌙 Sleep Duration (Hours)"
+            android:textColor="#183B32"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etEditSleepHours"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_card_purple"
+            android:hint="Example: 7.5"
+            android:inputType="numberDecimal"
+            android:padding="14dp"
+            android:textColor="#183B32"
+            android:textColorHint="#857BA8" />
+
+        <!-- Body Weight -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="⚖️ Body Weight (kg)"
+            android:textColor="#183B32"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etEditWeight"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_card_green"
+            android:hint="Example: 65.5"
+            android:inputType="numberDecimal"
+            android:padding="14dp"
+            android:textColor="#183B32"
+            android:textColorHint="#78947A" />
+
+        <!-- Update Button -->
+        <Button
+            android:id="@+id/btnUpdateRecord"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#279B78"
+            android:text="✓  Update Health Record"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Cancel Button -->
+        <Button
+            android:id="@+id/btnCancelEdit"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#E4EEE9"
+            android:text="Cancel"
+            android:textAllCaps="false"
+            android:textColor="#315B4B"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+</ScrollView>
